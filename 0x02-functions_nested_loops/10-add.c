@@ -3,11 +3,11 @@
 /**
  * add - adds two numbers x and y
  * return: integer number
- * @x- int type number
- * @y- int type number
+ * @a: int type number
+ * @b: int type number
  */
 
-int add(int x, int y)
+int add(int a, int b)
 {
-return (x + y);
+return (a + b);
 }
