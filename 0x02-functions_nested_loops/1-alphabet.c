@@ -2,7 +2,7 @@
 
 /**
  *main- Entry point
- *void print_alphabet(void)- print the alphabet
+ * print_alphabet - print the alphabet in lowercase
  *_putchar: Prints character
  *return: 0
  */
@@ -17,5 +17,4 @@ _putchar(x);
 x++;
 }
 _putchar(x);
-return (0);
 }
