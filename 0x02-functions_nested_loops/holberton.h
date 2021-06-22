@@ -21,6 +21,15 @@ int print_sign(int n);
 /*6-Absolute value of a number*/
 int _abs(int n);
 
+/*7-print last digit of a number*/
+int print_last_digit(int n);
+
+/*8-print every minute of the day*/
+void jack_bauer(void);
+
+/*9- Nine's times table*/
+void times_table(void);
+
 /*10-add two integers*/
 int add(int, int);
 
