@@ -12,6 +12,9 @@ void print_alphabet_x10(void);
 /*3-Check if a character is lowercase*/
 int _islower(int c);
 
+/*4-checks if entry is an alphabet*/
+int _isalpha(int c);
+
 /*5-print the sign of a number*/
 int print_sign(int n);
 
