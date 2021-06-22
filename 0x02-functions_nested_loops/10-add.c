@@ -2,7 +2,7 @@
 
 /**
  * add - adds two numbers x and y
- * return: integer number
+ * Return: a + b
  * @a: int type number
  * @b: int type number
  */
