@@ -9,6 +9,9 @@ void print_alphabet(void);
 /*2-print the alphabet 10 times*/
 void print_alphabet_x10(void);
 
+/*3-Check if a character is lowercase*/
+int _islower(int c);
+
 /*5-print the sign of a number*/
 int print_sign(int n);
 

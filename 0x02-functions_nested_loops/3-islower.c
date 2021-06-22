@@ -1,22 +1,12 @@
 #include "holberton.h"
 
 /**
- *main- Entry point
- *_putchar: Prints character
- *Return: 0
+ *_islower - checks if letter is lowercase
+ * @c: integer number input
+ *Return: 0 or 1
  */
 
-int main(void)
+int _islower(int c)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
-
-return (0);
+return (c >= 97 && c <= 122);
 }
