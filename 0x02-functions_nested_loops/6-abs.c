@@ -4,12 +4,11 @@
  * _abs - returns absolute value
  *_putchar: Prints character
  *@n: integer entered
- *Return: 0 or 1
+ *Return: abs(n)
  *Description: returns absolute value
  */
 
 int _abs(int n)
 {
-
-return (n >= 0 ? n : n * -1);
+return (n < 0 ? -1 * n : n);
 }
