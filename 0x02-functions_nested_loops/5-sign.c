@@ -21,7 +21,7 @@ if (n == 0)
 test = 0;
 _putchar('0');
 }
- else if (n < 0)
+else if (n < 0)
 {
 test = -1;
 _putchar('-');
