@@ -1,22 +1,28 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
- *main- Entry point
- *_putchar: Prints character
- *Return: 0
+ * print_to_98-prints from n to 98
+ * return: return
+ * @n- starting number
  */
 
-int main(void)
+void print_to_98(int n)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
+int i;
 
-return (0);
+if (n <= 98)
+{
+for (i = n; i < 98; i++)
+{
+printf("%1," i);
+}
+}
+else
+{
+for (i = n; i > 98; i--)
+{
+printf("%i,", i);
+}
+printf("98\n");
 }

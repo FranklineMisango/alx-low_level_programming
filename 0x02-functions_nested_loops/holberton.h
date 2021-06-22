@@ -11,3 +11,7 @@ void print_alphabet_x10(void);
 
 /*10-add two integers*/
 int add(int, int);
+
+/*11- print from n to 98*/
+
+void print_to_98(int n);
