@@ -1,22 +1,22 @@
+
 #include "holberton.h"
-
 /**
- *main- Entry point
- *_putchar: Prints character
- *Return: 0
+ * jack_bauer - prints 24 hour timer in millitary
  */
-
-int main(void)
+void jack_bauer(void)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
+	int i, j;
 
-return (0);
+	for (i = 0; i < 24; i++)
+	{
+		for (j = 0; j < 60; j++)
+		{
+			_putchar(i / 10 + 48);
+			_putchar(i % 10 + 48);
+			_putchar(':');
+			_putchar(j / 10 + 48);
+			_putchar(j % 10 + 48);
+			_putchar('\n');
+		}
+	}
 }
