@@ -1,22 +1,31 @@
 #include "holberton.h"
 
 /**
- *main- Entry point
+ * print_sign - to print the sign of a number
  *_putchar: Prints character
- *Return: 0
+ *@n: number input
+ *Description: Returns signage
+ *Return: 0 to 1
  */
 
-int main(void)
+int print_sign(int n)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
+int test
+if (n > 0)
+{
+test = 1;
+_putchar('+');
 
-return (0);
+}
+if (n == 0)
+{
+test = 0;
+_putchar('0');
+}
+else
+{
+test = -1;
+_putchar('-');
+}
+return (test);
 }
