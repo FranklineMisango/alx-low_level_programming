@@ -9,24 +9,12 @@
 
 void print_alphabet_x10(void)
 {
-int i;
-
-i = 1;
+int i = 0;
+char x = 'a';
 
 while (i < 10)
 {
-void print_alphabet(void)
-{
-
-char x;
-
-x = 'a';
-i = 1;
-while (x <= 'z')
-{
-_putchar(x);
-x++;
-}
+print_alphabet(void)
 }
 i++;
 }
