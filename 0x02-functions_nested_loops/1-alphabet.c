@@ -2,11 +2,12 @@
 
 /**
  *main- Entry point
+ *void print_alphabet(void)- print the alphabet
  *_putchar: Prints character
  *return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
 char x;
 x = 'a';

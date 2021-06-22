@@ -2,3 +2,6 @@
 
 /*0-print holberton then return a new line*/
 char _putchar(char x);
+
+/*1-print the alphabet in lower case*/
+void print_alphabet(void);
