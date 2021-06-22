@@ -4,12 +4,13 @@
 /**
  * print_to_98- prints from n to 98
  * return: return
- * @n- starting number
+ * n- starting number
  */
 
 void print_to_98(int n)
 {
-  while (n < 98)
+  /*n is the number we are starting with*/
+while (n < 98)
 {
 printf("%i, ", n);
 n++;
