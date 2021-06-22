@@ -8,3 +8,6 @@ void print_alphabet(void);
 
 /*2-print the alphabet 10 times*/
 void print_alphabet_x10(void);
+
+/*10-add two integers*/
+int add(int, int);
