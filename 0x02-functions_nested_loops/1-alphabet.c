@@ -16,5 +16,4 @@ while (x <= 'z')
 _putchar(x);
 x++;
 }
-_putchar(x);
 }
