@@ -19,6 +19,7 @@ int _isalpha(int c);
 int print_sign(int n);
 
 /*6-Absolute value of a number*/
+int _abs(int n);
 
 /*10-add two integers*/
 int add(int, int);
