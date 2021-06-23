@@ -1,22 +1,35 @@
+
 #include "holberton.h"
-
 /**
- *main- Entry point
- *_putchar: Prints character
- *Return: 0
+ * times_table - print times table
  */
-
-int main(void)
+void times_table(void)
 {
-_putchar('H');
-_putchar('o');
-_putchar('l');
-_putchar('b');
-_putchar('e');
-_putchar('r');
-_putchar('t');
-_putchar('o');
-_putchar('n');
+	int i, j, prod;
 
-return (0);
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			if (j == 0)
+			{
+				_putchar(48);
+				continue;
+			}
+			prod = i * j;
+			_putchar(',');
+			_putchar(' ');
+			if (prod >= 10)
+			{
+				_putchar(prod / 10 + 48);
+				_putchar(prod % 10 + 48);
+			}
+			else
+			{
+				_putchar(' ');
+				_putchar(prod + 48);
+			}
+		}
+		_putchar('\n');
+	}
 }
