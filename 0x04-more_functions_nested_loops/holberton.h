@@ -6,6 +6,9 @@
 /*Checks if a character is uppercase*/
 int _isupper(int c);
 
+/*check if a number is a digit*/
+int _isdigit(int c);
+
 /*Checks if a character is a digit*/
 int mul(int a, int b);
 
