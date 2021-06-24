@@ -1,0 +1,18 @@
+#include "holberton.h"
+
+/**
+ * print_diagonal- prints a diagonal line in the terminal
+ * @n: number of times \ will be printed
+ * Description: prints \ to make a diagonal line
+ * Return: a diagonalline
+ */
+
+void print_diagonal(int n)
+{
+if (n <= 0)
+_putchar('\n');
+else
+{
+_putchar((\) * n);
+}
+}
