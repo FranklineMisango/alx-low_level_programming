@@ -10,13 +10,13 @@ void print_numbers(void)
 {
 int x;
 
-for (x = 0; x < 10; X++)
+for (x = 48; x < 58; x++)
 if (x == 2 || x == 4)
 {
 _putchar();
 }
 else
 {
-_putchar (X);
+_putchar (x);
 }
 
