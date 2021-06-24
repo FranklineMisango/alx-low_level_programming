@@ -9,10 +9,10 @@
 
 void print_line(int n)
 {
-if (n <= 0)
-_putchar('\n');
-else
+int i;
 {
-_putchar((_) * n);
+for (i = 0; i < n; i++)
+{
+_putchar(95);
 }
 }
