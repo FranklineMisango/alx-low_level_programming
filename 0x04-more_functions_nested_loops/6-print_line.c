@@ -9,10 +9,15 @@
 
 void print_line(int n)
 {
-int i;
+include "holberton.h"
+void print_line(int n)
 {
-for (i = 0; i < n; i++)
+int i = 0;
+
+while (i < n && n > 0)
 {
-_putchar(95);
+_putchar('_');
+i++;
 }
+_putchar('\n');
 }
