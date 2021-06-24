@@ -1,18 +1,42 @@
-#include "holberton.h"
-
+#include <stdio.h>
 /**
- * mul - multiplies 2 integers
- * @a: first number
- * @b: second number
- * Description: multiplies and b
- * Return: result
+ * main - check the code for Holberton School students.
+ *
+ * Return: void.
  */
 
-int mul(int a, int b)
+int main(void)
 {
-int x;
 
-x = a * b;
+	int i = 1;
 
-return (x);
+	while (i <= 100)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%i", i);
+		}
+
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+
+		i++;
+	}
+	putchar('\n');
+	return (0);
+
 }
