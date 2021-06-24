@@ -6,7 +6,7 @@
  * Return: 01356789
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 int x;
 
@@ -19,4 +19,3 @@ else
 {
 _putchar (x);
 }
-
