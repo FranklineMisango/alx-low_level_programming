@@ -8,14 +8,17 @@
 
 void print_most_numbers(void)
 {
-int x;
+	char n = 0;
 
-for (x = 48; x < 58; x++)
-if (x == 50 || x == 52)
-{
-_putchar();
-}
-else
-{
-_putchar (x);
+	while (n <= 9)
+	{
+		if (n != 2 && n != 4)
+		{
+			_putchar('0' + n);
+		}
+
+		n++;
+	}
+	_putchar('\n');
+
 }
