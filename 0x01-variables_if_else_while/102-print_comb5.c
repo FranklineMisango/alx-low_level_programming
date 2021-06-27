@@ -10,37 +10,43 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	int c = 0;
+int c;
+int d;
+int e;
+int f = 0;
 
-	while (c < 10)
+while (f < 10)
+{
+	e = 0;
+	while (e < 10)
 	{
-		b = 0;
-		while (b < 10)
+		d = 0;
+		while (d < 10)
 		{
-			a = 0;
-			while (a < 10)
+			c = 0;
+			while (c < 10)
 			{
-				if (a != b && b != c && c < b && b < a)
+				if (!(f == c && e == d))
 				{
+					putchar('0' + f);
+					putchar('0' + e);
+					putchar(' ');
+					putchar('0' + d);
 					putchar('0' + c);
-					putchar('0' + b);
-					putchar('0' + a);
-
-					if (a + b + c != 9 + 8 + 7)
+					if (!(f + e == 18 && c + d == 17 && d == 9))
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-
-				a++;
+				c++;
 			}
-			b++;
+			d++;
 		}
-		c++;
+		e++;
 	}
-	putchar('\n');
-	return (0);
+	f++;
+}
+putchar('\n');
+return (0);
 }
