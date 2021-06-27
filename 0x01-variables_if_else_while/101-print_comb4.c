@@ -13,9 +13,9 @@ int main(void)
 int a;
 int b = 0;
 
- for (a = 1; a != b; a++)
 while (b < 10)
 {
+a = 0;
 while (a < 10)
 {
 
