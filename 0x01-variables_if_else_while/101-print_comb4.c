@@ -11,23 +11,30 @@
 int main(void)
 {
 int a;
-int b = 0;
+int b;
+int c = 0;
 
-while (b < 10)
+while (c < 10)
 {
-a = 0;
+a = 1;
+b = 2;
 while (a < 10)
 {
-
-putchar('0' + b);
+while (b < 10)
+if (c != a && c != b && a != b && c < a && c < b)
+{
+putchar('0' + c);
 putchar('0' + a);
-
-if (a + b != 18)
+putchar('0' + b);
+if (a + c + b != 26)
 {
 putchar(',');
 putchar(' ');
 }
+}
 a++;
+}
+c++;
 }
 b++;
 }
