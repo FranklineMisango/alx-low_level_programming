@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
  * Return: 0
  */
-
 int main(void)
 {
 int c;
