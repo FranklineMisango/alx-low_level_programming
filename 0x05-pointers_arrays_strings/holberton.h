@@ -27,3 +27,6 @@ void print_array(int *a, int n);
 
 /*Copy string pointed to by src*/
 char *_strcpy(char *dest, char *str);
+
+/*prints characters*/
+_putchar(ch);
