@@ -20,7 +20,7 @@ void rev_string(char *s);
 void puts2(char *str);
 
 /*print half a string*/
-void puts_half(char *str)
+void puts_half(char *str);
 
 /*Prints n elements of an array of integers*/
 void print_array(int *a, int n);
