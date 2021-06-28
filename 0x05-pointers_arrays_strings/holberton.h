@@ -6,3 +6,6 @@ void swap_int(int *a, int *b);
 
 /*Returns the length of a string*/
 int _strlen(char *s);
+
+/*Print a string to stdout followed by a new line*/
+void _puts(char *str);
