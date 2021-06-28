@@ -4,7 +4,7 @@
  * *_strcpy - copies a string to buffer dest
  * @src: string location
  * @dest: buffer location
- * Return - *dest
+ * Return: pointer to dest
  */
 
 char *_strcpy(char *dest, char *src)
