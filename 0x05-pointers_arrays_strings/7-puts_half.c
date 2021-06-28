@@ -1,13 +1,13 @@
 #include "holberton.h"
 
 /**
- *reset_to_98 - Resets the value of the int pointer to 98
- *@n: an integer
- *return: void
+ * puts_half -prints half a string
+ * @str: string location
+ * Return: void
  */
 
-void reset_to_98(int *n)
+void puts_half(char *str)
 {
-&n = 98;
+  _putchar();
 
 }

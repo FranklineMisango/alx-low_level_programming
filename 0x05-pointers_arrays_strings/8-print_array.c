@@ -1,13 +1,15 @@
 #include "holberton.h"
 
 /**
- *reset_to_98 - Resets the value of the int pointer to 98
- *@n: an integer
+ * print_array - prints n integers of an array
+ *@n: number of integers in the array that will be printed
+ *@a: array location
+ * You can use printf
  *return: void
  */
 
-void reset_to_98(int *n)
+void print_array(int *a, int n)
 {
-&n = 98;
+  printf();
 
 }

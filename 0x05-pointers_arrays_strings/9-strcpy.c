@@ -1,13 +1,13 @@
 #include "holberton.h"
 
 /**
- *reset_to_98 - Resets the value of the int pointer to 98
- *@n: an integer
- *return: void
+ * *strcpy - copies a string to buffer dest
+ * @str: string location
+ * @dest: buffer location
+ *return: *dest
  */
 
-void reset_to_98(int *n)
+char *_strcpy(char *dest, char *src)
 {
-&n = 98;
 
 }
