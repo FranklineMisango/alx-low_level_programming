@@ -9,19 +9,21 @@
 
 int _atoi(char *s)
 {
-  *s = str;
-  int i = 0;
+	int sign = 1, resp = 0, firstNum;
 
-  while (i != '\0')
-    {
-      if (i <= 9 && i >= 0)
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-	  putchar(str[i])
-	    }
-      i++;
-    }
-  else
-    {
-      return (0);
-    }
+		if (s[firstNum] == '-')
+		{
+			sign *= -1;
+		}
+	}
+
+	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	{
+		resp *= 10;
+		resp += (s[i] - 48);
+	}
+
+	return (sign * resp);
 }
