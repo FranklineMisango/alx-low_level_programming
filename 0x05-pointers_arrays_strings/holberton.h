@@ -30,3 +30,6 @@ char *_strcpy(char *dest, char *str);
 
 /*prints characters*/
 int _putchar(char c);
+
+/*Converts a string to an integer*/
+int _atoi(char *s);
