@@ -1,3 +1,6 @@
+/*Input data*/
+int _putchar(char c);
+
 /*Concatenate two strings*/
 char *_strcat(char *dest, char *src);
 
@@ -18,3 +21,13 @@ char *string_toupper(char *);
 
 /*Capitalize all words of a string*/
 char *cap_string(char *);
+
+/*leet question*/
+char *leet(char *);
+
+/*rot whatever*/
+char *rot13(char *);
+
+void print_number(int n);
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
