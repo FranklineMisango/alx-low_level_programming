@@ -1,27 +1,24 @@
 #include "holberton.h"
 
 /**
- * _strcmp - compares two strings
- * @s1: string 1
- * @s2: string 2
- * Return: 0 if matching, and ns1 - ns2 if not matching
+ * _strncpy - copies a string
+ * @dest: pointer to string variable
+ * @src: pointer to string variable
+ * @n: limiter
+ * Return: dest
  */
-
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-int i;
+	int a;
 
-/**
- * We have reached the end of S1 OR we have reached the end of S2
- * 
- */
-
-for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
-{
-if (s1[i] != s2[i])
-{
-return (s1[i] - s2[i]);
-}
-}
-return (0);
+	for (a = 0; a < n && src[a] != '\0'; a++)
+	{
+		dest[a] = src[a];
+	}
+	while (a < n)
+	{
+		dest[a] = '\0';
+		a++;
+	}
+	return (dest);
 }
