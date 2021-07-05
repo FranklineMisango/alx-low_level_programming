@@ -16,9 +16,6 @@ if (s[i] == c)
 {
 return (s + i);
 }
-else
-{
+}
 return ('\0');
-}
-}
 }
