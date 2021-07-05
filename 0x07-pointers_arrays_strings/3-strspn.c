@@ -9,10 +9,24 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int i = 0;
-while (s[i] == accept[i])
+int index;
+unsigned int c = 0;
+
+while (*s)
 {
-i++;
-return (i);
+for (index = 0; accept[index]; index++)
+{
+if (*s == accept[index])
+{
+c++;
+break;
 }
+else if (accept[index + 1] == '\0')
+{
+return (c);
+}
+}
+s++;
+}
+return (c);
 }
