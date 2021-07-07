@@ -13,7 +13,7 @@ char str;
 
 if (s[i] == '\0')
 {
-return ('\n');
+_putchar();
 }
 str = s[i] + s[i + 1];
 i++;
