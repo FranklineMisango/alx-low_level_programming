@@ -14,12 +14,12 @@ if (y < 0)
 {
 return (-1);
 }
-if (y == 0)
+else if (y == 0)
 {
-ans = x;
+ans = 1;
 }
-{
-ans = x *(x **(y - 1));
+else if (y > 0)
+ans = x * factorial(n - 1);
 return (ans);
 }
 }
