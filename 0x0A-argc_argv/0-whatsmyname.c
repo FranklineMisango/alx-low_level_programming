@@ -1,15 +1,15 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * _printmyname - prints the program name
+ * main - prints program name, followed by a new line
  * @argc: int
  * @argv: list
  * Return: 0
  */
 
-int main(int argc, char const *arg[])
+int main(int argc, char const *argv[])
 {
 (void)argc;
-printf("%s\n",argv[0]);
+printf("%s\n", argv[0]);
 return (0);
 }
