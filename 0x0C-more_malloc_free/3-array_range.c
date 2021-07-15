@@ -13,16 +13,16 @@ int *m;
 int i;
 
 if (min > max)
-	return (NULL);
+return (NULL);
 
 m = malloc((max - min + 1) * sizeof(int));
 
 if (m == 0)
-	return (NULL);
+return (NULL);
 
 
 for (i = 0; min + i <= max; i++)
-	m[i] = min + i;
+m[i] = min + i;
 
 return (m);
 }
