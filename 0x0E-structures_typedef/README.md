@@ -1,1 +1,1 @@
-# Learn Struct and Typedef
+# Learn Structructure and Type definition
