@@ -1,0 +1,6 @@
+#ifndef VARIADIC-FUNCTIONS_H
+#define VARIADIC-FUNCTIONS_H
+
+int _putchar(char c);
+
+#endif /*VARIADIC-FUNCTIONS_H*/
