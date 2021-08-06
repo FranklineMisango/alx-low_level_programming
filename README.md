@@ -1,2 +1,1 @@
-<h2>This is my Low level programming Repository</h2>
-<h4>Prepare for the magic</h4>
+Let's get down a bit, shall we?
