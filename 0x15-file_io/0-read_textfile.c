@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
 /**
  * read_textfile - function that reads a text file and
@@ -12,39 +9,35 @@
  * Return: actual number of letters
  *         0 if file cannot be opened, is NULL and if write fails
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int file;
-ssize_t rcount, wcount;
-char *buffer;
+	int fd, read_fun, write_fun;
+	char *tmp;
 
-if (filename == NULL)
-	return (0);
+	if (filename == NULL)
+		return (0);
 
-file = open(filename, O_RDWR);
-if (file == -1)
-	return (0);
+	tmp = malloc(sizeof(char) * letters);
 
-buffer = malloc(sizeof(char) * letters);
-if (buffer == NULL)
-{
-	free(buffer);
-	return (0);
-}
+	if (tmp == NULL)
+		return (0);
 
-rcount = read(file, buffer, letters);
-if (rcount == -1)
-	return (0);
+	fd = open(filename, O_RDONLY);
 
-wcount = write(STDOUT_FILENO, buffer, rcount);
+	if (fd == -1)
+		return (0);
 
-if (wcount == -1 || rcount != wcount)
-	return (0);
+	read_fun = read(fd, tmp, letters);
 
-free(buffer);
+	if (read_fun == -1)
+		return (0);
 
-close(file);
+	write_fun =  write(STDOUT_FILENO, tmp, read_fun);
 
-return (wcount);
+	if (write_fun == -1)
+		return (0);
+	close(fd);
+
+	free(tmp);
+	return (write_fun);
 }
