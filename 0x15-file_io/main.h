@@ -2,7 +2,7 @@
 #define HOLBERTON_H
 
 #include <stdio.h>
-
+#include <elf.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <sys/types.h>
