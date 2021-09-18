@@ -5,12 +5,6 @@
  *
  * Description: Prints "and that piece of art is useful..." without puts
  *
- * @s: string pointer
- *
- * @l: string length
- *
- * @fd: size of characters in s
- *
  * Return: 1
  */
 
