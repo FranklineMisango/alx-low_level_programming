@@ -12,7 +12,7 @@ int main(void)
 char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
 write(2, ch, sizeof(ch));
-fwrite("[ERROR] : No string argument provided!\n", 39, 1, stderr);
+fwrite("[stderr] : No string argument provided!\n", 40, 1, stderr);
 
 return (1);
 }
