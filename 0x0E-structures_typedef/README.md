@@ -1,1 +1,1 @@
-# Learn Structructure and Type definition
+# Learn Structures and Type definition
