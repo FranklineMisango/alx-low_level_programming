@@ -1,4 +1,4 @@
-#!/usr/bin/pverthon3
+#!/usr/bin/python3
 
 """A module to calculate perimeter of an island"""
 
