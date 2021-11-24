@@ -2,6 +2,7 @@
 
 """A module to calculate perimeter of an island"""
 
+
 def island_perimeter(grid):
     """The function itself"""
 
