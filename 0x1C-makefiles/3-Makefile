@@ -4,17 +4,17 @@ OBJ = *.o
 NAME = school
 RM = rm -f
 
-all: ${OBJ}
-	    ${CC} ${OBJ} -o ${NAME}
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
-clean: 
-		${RM} -f *~ ${NAME}
+clean:
+	$(RM) -f *~ $(NAME)
 
 oclean:
-		${RM} -f ${OBJ}
+	$(RM) -f $(OBJ)
 
 fclean:
-		${RM} -f *~ ${NAME} ${OBJ}
+	$(RM) -f *~ $(NAME) $(OBJ)
 
-re: oclean ${OBJ}
-		${CC} ${OBJ} -o ${NAME}
+re: oclean $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
