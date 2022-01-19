@@ -10,48 +10,39 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-size_t i;
-int left = 0;
-int right = size;
-int middle;
-if (array == NULL)
+	int  left, right, pivot;
+
+	if (array == NULL)
+		return (-1);
+	left = 0;
+	right = size - 1;
+	while (left <= right)
+	{
+		print_array(array, left, right);
+		pivot = (left + right) / 2;
+		if (array[pivot] > value)
+			right = pivot - 1;
+		else if (array[pivot] < value)
+			left = pivot + 1;
+		else
+			return (pivot);
+	}
 	return (-1);
-
-for (i = 0; left < right; i++)
-{
-	printf("Searching in array: ");
-	print_array(array, left, right);
-	middle = (left + right) / 2;
-
-	if (array[middle] < value)
-		left = middle + 1;
-	else if (array[middle] > value)
-		right = middle;
-	else
-		return (middle);
 }
-return (-1);
-}
-
 
 /**
- * print_array - print `n` elements of an array of integers
- * @a: int array pointer to print
- * @i: int, start index
- * @j: int, end index
- * Description: Numbers must be separated by comma and space.
- * Numbers should be displayed in the same order they are stored in array.
- * You can only use _putchar to print.
- */
+  * print_array - print array
+  * @array: array
+  * @left: starting print
+  * @right: ending print
+  */
 
-void print_array(int *a, int i, int j)
+void print_array(int *array, int left, int right)
 {
+	int i;
 
-	for (; i < j; i++)
-	{
-		printf("%d", a[i]);
-		if (i < j - 1)
-			printf(", ");
-	}
-	printf("\n");
+	printf("Searching in array: ");
+	for (i = left; i < right; i++)
+		printf("%d, ", array[i]);
+	printf("%d\n", array[i]);
 }
